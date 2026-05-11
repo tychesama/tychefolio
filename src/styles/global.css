@@ -417,14 +417,15 @@ nav a:hover {
 
 .section-heading {
   display: grid;
-  grid-template-columns: minmax(8rem, 0.32fr) minmax(0, 0.82fr) minmax(16rem, 0.72fr);
-  gap: 1rem;
+  grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr);
+  gap: 0.35rem 1.2rem;
   align-items: start;
   margin-bottom: 1.2rem;
 }
 
 .section-heading .kicker {
-  margin-top: 0.35rem;
+  grid-row: span 2;
+  margin-top: 0.25rem;
 }
 
 .section-heading h2 {
@@ -432,7 +433,9 @@ nav a:hover {
 }
 
 .section-heading p:last-child {
-  margin-top: 0.35rem;
+  grid-column: 2;
+  max-width: 54rem;
+  margin-top: 0;
   margin-bottom: 0;
   color: var(--muted);
 }
@@ -823,6 +826,11 @@ nav a:hover {
   background-size: 32px 32px, auto;
 }
 
+.detail-page h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.02;
+}
+
 .back-link {
   display: inline-flex;
   margin-bottom: 1rem;
@@ -867,6 +875,60 @@ nav a:hover {
   padding: 1rem;
   background: rgba(226, 216, 197, 0.72);
   border: 1px solid rgba(23, 19, 15, 0.2);
+}
+
+.information-panel {
+  margin-top: clamp(1.2rem, 2.5vw, 2.2rem);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  background: rgba(226, 216, 197, 0.72);
+  border: 1px solid rgba(23, 19, 15, 0.2);
+}
+
+.information-panel h2 {
+  margin-bottom: 1rem;
+}
+
+.information-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  border-top: 1px solid var(--rule);
+  border-left: 1px solid var(--rule);
+}
+
+.information-list div {
+  min-width: 0;
+  padding: 0.75rem;
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.information-list dt {
+  margin-bottom: 0.18rem;
+  color: var(--rust);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.information-list dd {
+  margin: 0;
+  color: var(--ink);
+}
+
+.detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.detail-links a {
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .detail-tags,
@@ -966,6 +1028,7 @@ nav a:hover {
 
   .project-grid,
   .detail-grid,
+  .information-list,
   .experience-card {
     grid-template-columns: 1fr;
   }
