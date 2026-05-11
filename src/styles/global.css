@@ -165,14 +165,11 @@ main > .hero + section {
   overflow-wrap: anywhere;
 }
 
-.brand-mark {
-  display: grid;
-  width: 1.75rem;
-  height: 1.75rem;
-  place-items: center;
-  background: var(--ink);
-  color: var(--cream);
-  font-family: var(--font-accent);
+.brand-logo {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  box-shadow: 2px 2px 0 rgba(122, 50, 31, 0.35);
 }
 
 nav {
