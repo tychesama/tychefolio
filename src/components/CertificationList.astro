@@ -17,6 +17,7 @@ const { certifications } = Astro.props;
   <div class="notice-grid">
     {certifications.map((item) => (
       <article class="notice-card" style={`--accent: ${item.color}`}>
+        <a class="stretched-link" href={`/certifications/${certificationSlug(item)}/`} aria-label={`View ${item.name} details`}></a>
         <div class="notice-stamp">{item.type}</div>
         <h3>{item.name}</h3>
         <p class="notice-meta">{item.issuer} - {formatDate(item.date)}</p>

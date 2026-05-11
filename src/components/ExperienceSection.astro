@@ -16,6 +16,7 @@ const { experience } = Astro.props;
   <div class="experience-list">
     {experience.map((item) => (
       <article class="experience-card">
+        <a class="stretched-link" href={`/experience/${experienceSlug(item)}/`} aria-label={`Read ${item.role} field report`}></a>
         <div class="experience-stamp">
           <span>{formatDate(item.date)}</span>
           <strong>{item.duration}</strong>

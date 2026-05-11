@@ -417,13 +417,22 @@ nav a:hover {
 
 .section-heading {
   display: grid;
-  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr) minmax(14rem, 0.55fr);
+  grid-template-columns: minmax(8rem, 0.32fr) minmax(0, 0.82fr) minmax(16rem, 0.72fr);
   gap: 1rem;
-  align-items: end;
-  margin-bottom: 1rem;
+  align-items: start;
+  margin-bottom: 1.2rem;
+}
+
+.section-heading .kicker {
+  margin-top: 0.35rem;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
 }
 
 .section-heading p:last-child {
+  margin-top: 0.35rem;
   margin-bottom: 0;
   color: var(--muted);
 }
@@ -460,6 +469,27 @@ nav a:hover {
 .notice-card {
   min-width: 0;
   background: rgba(226, 216, 197, 0.7);
+}
+
+.project-card,
+.experience-card,
+.notice-card {
+  position: relative;
+}
+
+.stretched-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.project-image,
+.project-links,
+.experience-card a:not(.stretched-link),
+.notice-card a:not(.stretched-link) {
+  position: relative;
+  z-index: 2;
 }
 
 .project-card {
