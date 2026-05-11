@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title desc">
+  <title id="title">Temporary western portrait placeholder</title>
+  <desc id="desc">A sepia wanted-poster style portrait placeholder.</desc>
+  <rect width="900" height="1125" fill="#b9aa94"/>
+  <rect x="42" y="42" width="816" height="1041" fill="none" stroke="#1b1915" stroke-width="10"/>
+  <rect x="70" y="70" width="760" height="985" fill="none" stroke="#1b1915" stroke-width="3" stroke-dasharray="18 14"/>
+  <text x="450" y="170" text-anchor="middle" fill="#1b1915" font-family="Georgia, serif" font-size="96" font-weight="700">WANTED</text>
+  <circle cx="450" cy="500" r="210" fill="#8f6f58"/>
+  <path d="M260 500c0-145 95-250 220-250 105 0 185 75 205 185-60-55-150-75-250-55-80 15-135 55-175 120z" fill="#1b1915"/>
+  <circle cx="370" cy="505" r="22" fill="#1b1915"/>
+  <circle cx="530" cy="505" r="22" fill="#1b1915"/>
+  <path d="M365 645c55 35 120 35 175 0" fill="none" stroke="#1b1915" stroke-width="16" stroke-linecap="round"/>
+  <path d="M240 890h420" stroke="#1b1915" stroke-width="12"/>
+  <text x="450" y="965" text-anchor="middle" fill="#1b1915" font-family="Georgia, serif" font-size="54">PORTRAIT SOON</text>
+</svg>

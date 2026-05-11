@@ -1,0 +1,54 @@
+---
+import Header from "../../components/Header.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { experienceSlug, formatDate, portfolio, type Experience } from "../../data/portfolio";
+
+export function getStaticPaths() {
+  return portfolio.experience.map((experience) => ({
+    params: { slug: experienceSlug(experience) },
+    props: { experience },
+  }));
+}
+
+type Props = {
+  experience: Experience;
+};
+
+const { experience } = Astro.props;
+---
+
+<BaseLayout title={`${experience.role} | Tychefolio`} description={experience.description}>
+  <div class="page-shell">
+    <Header />
+    <main>
+      <article class="detail-page experience-detail">
+        <a class="back-link" href="/#experience">Back to Experience</a>
+        <div class="detail-hero">
+          <div>
+            <p class="kicker">Field Report</p>
+            <h1>{experience.role}</h1>
+            <p class="deck">{experience.description}</p>
+            <div class="detail-actions">
+              <a class="button primary" href={experience.link} target="_blank" rel="noreferrer">{experience.company}</a>
+            </div>
+          </div>
+          <div class="detail-stamp">
+            <span>{formatDate(experience.date)}</span>
+            <strong>{experience.duration}</strong>
+          </div>
+        </div>
+
+        <section class="detail-grid" aria-label="Experience details">
+          <article>
+            <h2>Work</h2>
+            <p>{experience.description}</p>
+          </article>
+          <article>
+            <h2>Company</h2>
+            <p>{experience.about}</p>
+          </article>
+        </section>
+      </article>
+    </main>
+  </div>
+</BaseLayout>

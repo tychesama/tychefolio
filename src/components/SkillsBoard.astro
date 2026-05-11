@@ -1,0 +1,25 @@
+---
+import type { Skill } from "../data/portfolio";
+
+type Props = {
+  title: string;
+  skills: Skill[];
+  compact?: boolean;
+};
+
+const { title, skills, compact = false } = Astro.props;
+---
+
+<section class:list={["skills-board", compact && "compact"]}>
+  <h3>{title}</h3>
+  <div class="skill-grid">
+    {skills.map((skill) => (
+      <article class="skill-item">
+        <div class="skill-heading">
+          <strong>{skill.name}</strong>
+        </div>
+        <p>{skill.description}</p>
+      </article>
+    ))}
+  </div>
+</section>

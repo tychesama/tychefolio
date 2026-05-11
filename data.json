@@ -1,0 +1,816 @@
+{
+  "projects": [
+    {
+      "name": "Motobai Inventory and Sales Management System",
+      "favorite": true,
+      "tags": [
+        "type:system",
+        "platform:web",
+        "status:completed",
+        "collab:team",
+        "deploy:no",
+        "context:personal",
+        "lang:python",
+        "fw:django",
+        "fw:react",
+        "tool:postgresql",
+        "domain:inventory",
+        "domain:sales"
+      ],
+      "description": "An inventory and sales management platform built with React and Django.",
+      "link": "https://github.com/joemtyche/MotobaiProject",
+      "repo": "MotobaiProject",
+      "color": "#3B82F6",
+      "images": [
+        "/assets/projects/motobai/moto.gif",
+        "/assets/projects/motobai/1.png",
+        "/assets/projects/motobai/2.png",
+        "/assets/projects/motobai/3.png",
+        "/assets/projects/motobai/4.png",
+        "/assets/projects/motobai/5.png",
+        "/assets/projects/motobai/6.png",
+        "/assets/projects/motobai/7.png"
+      ],
+      "user": "joemtyche",
+      "techstack": [
+        "React",
+        "Django",
+        "Python",
+        "PostgreSQL"
+      ],
+      "collaborators": {
+        "remagll": "https://github.com/remagII",
+        "Thaddeus Domingo": "https://github.com/mnsling"
+      },
+      "deployment": "https://motobai.joemidpan.com",
+      "documentation": "https://youtu.be/JgODj4c1fUU"
+    },
+    {
+      "name": "Highlights App",
+      "favorite": false,
+      "tags": [
+        "type:app",
+        "platform:mobile",
+        "status:completed",
+        "collab:solo",
+        "deploy:no",
+        "context:personal",
+        "lang:dart",
+        "fw:flutter",
+        "tool:sqlite",
+        "domain:productivity"
+      ],
+      "description": "A mobile app built in Flutter for making timestamps of moments which can be used to review video/audio recordings faster.",
+      "link": "https://github.com/tychesama/highlights-app",
+      "repo": "highlights-app",
+      "color": "#10B981",
+      "images": [
+        "/assets/projects/highlights_app/high.gif",
+        "/assets/projects/highlights_app/1.png",
+        "/assets/projects/highlights_app/2.png",
+        "/assets/projects/highlights_app/3.png",
+        "/assets/projects/highlights_app/4.png",
+        "/assets/projects/highlights_app/5.png"
+      ],
+      "user": "tychesama",
+      "techstack": [
+        "Flutter",
+        "Dart",
+        "SQLite"
+      ],
+      "collaborators": {},
+      "documentation": "https://youtu.be/XOmVl8Lzkc0"
+    },
+    {
+      "name": "Infinite Tower Adventure Game",
+      "favorite": false,
+      "tags": [
+        "type:game",
+        "platform:desktop",
+        "status:completed",
+        "collab:solo",
+        "deploy:no",
+        "context:personal",
+        "lang:java",
+        "domain:gameplay"
+      ],
+      "description": "A Java-based adventure game with infinite tower mechanics. My very first coding project, done in Java using EclipseIDE.",
+      "link": "https://github.com/joemtyche/AdventureGame",
+      "repo": "AdventureGame",
+      "color": "#F59E0B",
+      "images": [
+        "/assets/projects/infinite_tower/inf.gif",
+        "/assets/projects/infinite_tower/1.png",
+        "/assets/projects/infinite_tower/2.png",
+        "/assets/projects/infinite_tower/3.png",
+        "/assets/projects/infinite_tower/4.png",
+        "/assets/projects/infinite_tower/5.png",
+        "/assets/projects/infinite_tower/6.png"
+      ],
+      "user": "joemtyche",
+      "techstack": [
+        "Java",
+        "OOP"
+      ],
+      "collaborators": {},
+      "documentation": "https://youtu.be/ji-GNExerzo"
+    },
+    {
+      "name": "Employee Management System",
+      "favorite": false,
+      "tags": [
+        "type:system",
+        "platform:web",
+        "status:completed",
+        "collab:team",
+        "deploy:no",
+        "context:personal",
+        "lang:javascript",
+        "fw:express",
+        "tool:mongodb",
+        "domain:crud",
+        "domain:hr"
+      ],
+      "description": "A Node.js and JavaScript web app to manage employee records.",
+      "link": "https://github.com/joemtyche/EventDrivenCRUD",
+      "repo": "EventDrivenCRUD",
+      "color": "#EF4444",
+      "images": [
+        "/assets/projects/employee_management/emp.gif",
+        "/assets/projects/employee_management/1.png",
+        "/assets/projects/employee_management/2.png",
+        "/assets/projects/employee_management/3.png",
+        "/assets/projects/employee_management/4.png"
+      ],
+      "user": "joemtyche",
+      "techstack": [
+        "Node.js",
+        "JavaScript",
+        "Express",
+        "MongoDB"
+      ],
+      "collaborators": {
+        "Ram Christian Nacar": "https://github.com/shaheenNawaf",
+        "Thaddeus Domingo": "https://github.com/alextan"
+      },
+      "documentation": "https://youtu.be/BhMEcmNsQGE"
+    },
+    {
+      "name": "Tetris Lite",
+      "favorite": false,
+      "tags": [
+        "type:game",
+        "platform:desktop",
+        "status:completed",
+        "collab:solo",
+        "deploy:no",
+        "context:personal",
+        "lang:cpp",
+        "tool:raylib",
+        "domain:gameplay"
+      ],
+      "description": "A lightweight C++ implementation of Tetris using Raylib CPP.",
+      "link": "https://github.com/joemtyche/TetrisLite",
+      "repo": "TetrisLite",
+      "color": "#6366F1",
+      "images": [],
+      "user": "joemtyche",
+      "techstack": [
+        "C++",
+        "Raylib"
+      ],
+      "collaborators": {}
+    },
+    {
+      "name": "Kanban Style Todo List",
+      "favorite": false,
+      "tags": [
+        "type:app",
+        "platform:web",
+        "status:completed",
+        "collab:team",
+        "deploy:yes",
+        "context:personal",
+        "lang:javascript",
+        "fw:react",
+        "lang:css",
+        "domain:productivity",
+        "domain:todo"
+      ],
+      "description": "A React-based simple todo list app.",
+      "link": "https://github.com/user2/simple-todo-list",
+      "repo": "",
+      "color": "#14B8A6",
+      "images": [],
+      "user": "joemtyche",
+      "techstack": [
+        "React",
+        "JavaScript",
+        "CSS"
+      ],
+      "collaborators": {
+        "User2": "https://github.com/user2"
+      },
+      "documentation": "https://youtu.be/8P0hdP05QCE"
+    },
+    {
+      "name": "StoreIT: Simple Sales System",
+      "favorite": false,
+      "tags": [
+        "type:system",
+        "platform:web",
+        "status:completed",
+        "collab:team",
+        "deploy:no",
+        "context:personal",
+        "lang:python",
+        "fw:django",
+        "fw:react",
+        "tool:sqlite",
+        "domain:sales"
+      ],
+      "description": "A sales management system built with React and Django.",
+      "link": "https://github.com/shaheenNawaf/CPIS_AdDU",
+      "repo": "CPIS_AdDU",
+      "color": "#8B5CF6",
+      "images": [
+        "/assets/projects/store_it/store.gif",
+        "/assets/projects/store_it/1.png",
+        "/assets/projects/store_it/2.png",
+        "/assets/projects/store_it/3.png",
+        "/assets/projects/store_it/4.png"
+      ],
+      "user": "joemtyche",
+      "techstack": [
+        "React",
+        "Django",
+        "Python",
+        "SQLite"
+      ],
+      "collaborators": {
+        "Shaheen Nawaf": "https://github.com/shaheenNawaf",
+        "Christian Ragonton": "https://github.com/shaheenNawaf",
+        "User 3": "https://github.com/shaheenNawaf"
+      },
+      "documentation": "https://youtu.be/7RU6BpVFWYg"
+    },
+    {
+      "name": "Japan Attractions Appreciation",
+      "favorite": false,
+      "tags": [
+        "type:website",
+        "platform:web",
+        "status:completed",
+        "collab:solo",
+        "deploy:yes",
+        "context:personal",
+        "lang:html",
+        "lang:css",
+        "domain:landing"
+      ],
+      "description": "A static HTML project showcasing Japanese landmarks.",
+      "link": "https://github.com/joemtyche/PerformanceAssessment1",
+      "repo": "PerformanceAssessment1",
+      "color": "#DC2626",
+      "images": [
+        "/assets/projects/japan_attractions/japan.gif",
+        "/assets/projects/japan_attractions/1.png",
+        "/assets/projects/japan_attractions/2.png",
+        "/assets/projects/japan_attractions/3.png"
+      ],
+      "user": "tychesama",
+      "techstack": [
+        "HTML",
+        "CSS"
+      ],
+      "collaborators": {},
+      "deployment": "https://joemtyche.github.io/japan-appreciation/"
+    },
+    {
+      "name": "Tyche Monorepo",
+      "favorite": true,
+      "tags": [
+        "type:website",
+        "platform:web",
+        "status:completed",
+        "collab:solo",
+        "deploy:yes",
+        "context:personal",
+        "lang:typescript",
+        "fw:react",
+        "fw:nextjs",
+        "tool:tailwind",
+        "domain:portfolio",
+        "domain:blog"
+      ],
+      "description": "Personal portfolio and blog website.",
+      "link": "https://github.com/tychesama/TYCHE-MONOREPO",
+      "repo": "TYCHE-MONOREPO",
+      "color": "#D97706",
+      "images": [],
+      "user": "tychesama",
+      "techstack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "TailwindCSS"
+      ],
+      "collaborators": {},
+      "deployment": "https://www.joemidpan.com/"
+    },
+    {
+      "name": "Uma Musume AutoTrainer",
+      "favorite": false,
+      "tags": [
+        "type:tool",
+        "platform:desktop",
+        "status:completed",
+        "collab:team",
+        "deploy:no",
+        "context:open-source",
+        "lang:python",
+        "domain:automation",
+        "domain:cv"
+      ],
+      "description": "Enhanced automation tool for Uma Musume training.",
+      "link": "https://github.com/tychesama/umamusume-auto-train_ty",
+      "repo": "umamusume-auto-train_ty",
+      "color": "#0EA5E9",
+      "images": [
+        "https://raw.githubusercontent.com/tychesama/umamusume-auto-train-tyche/main/screenshot.png"
+      ],
+      "user": "tychesama",
+      "techstack": [
+        "Python",
+        "Automation",
+        "Computer Vision"
+      ],
+      "collaborators": {
+        "CrazyIvanTR": "https://github.com/CrazyIvanTR",
+        "samsulpanjul": "https://github.com/samsulpanjul",
+        "et al.": "https://github.com/samsulpanjul/umamusume-auto-train"
+      }
+    },
+    {
+      "name": "Calasense",
+      "favorite": true,
+      "tags": [
+        "type:app",
+        "platform:mobile",
+        "status:completed",
+        "collab:team",
+        "deploy:no",
+        "context:thesis",
+        "lang:python",
+        "fw:flutter",
+        "fw:flask",
+        "domain:cv",
+        "domain:ml",
+        "domain:health-agri"
+      ],
+      "description": "Machine learning calamansi leaf disease detection using feature engineering techniques and YOLOv5. Built for thesis; includes Flask backend and Flutter mobile app.",
+      "link": "https://github.com/mnsling/calasense_mobileapp",
+      "repo": "calasense_mobileapp",
+      "color": "#22C55E",
+      "images": [],
+      "user": "tychesama",
+      "techstack": [
+        "YOLOv5",
+        "Flask",
+        "Flutter",
+        "Python",
+        "Machine Learning",
+        "Computer Vision"
+      ],
+      "collaborators": {},
+      "documentation": ""
+    },
+    {
+      "name": "Gas Sensor using ESP32",
+      "favorite": false,
+      "tags": [
+        "type:tool",
+        "platform:embedded",
+        "status:completed",
+        "collab:solo",
+        "deploy:no",
+        "context:personal",
+        "domain:iot",
+        "domain:sensors",
+        "tool:esp32",
+        "tool:mq135",
+        "tool:dht11",
+        "tool:proteus"
+      ],
+      "description": "ESP32 project using MQ-135 and DHT-11 to detect gas, temperature, and humidity. Includes Proteus 7 simulation.",
+      "link": "https://github.com/tychesama/GasSensor-ESP32",
+      "repo": "GasSensor-ESP32",
+      "color": "#14B8A6",
+      "images": [],
+      "user": "tychesama",
+      "techstack": [
+        "ESP32",
+        "MQ-135",
+        "DHT-11",
+        "Proteus 7"
+      ],
+      "collaborators": {},
+      "documentation": ""
+    }
+  ],
+  "skills": {
+    "technical": [
+      {
+        "name": "Java",
+        "proficiency": 91,
+        "description": "Object-oriented programming for scalable applications and problem solving."
+      },
+      {
+        "name": "Python",
+        "proficiency": 88,
+        "description": "Scripting, backend development, and applied machine learning tasks."
+      },
+      {
+        "name": "C++",
+        "proficiency": 72,
+        "description": "Efficient programming for algorithms and system-level operations."
+      },
+      {
+        "name": "Django",
+        "proficiency": 85,
+        "description": "Backend web framework for building secure and scalable applications."
+      },
+      {
+        "name": "React",
+        "proficiency": 85,
+        "description": "Component-based frontend development using modern JavaScript."
+      },
+      {
+        "name": "Next.js",
+        "proficiency": 70,
+        "description": "Full-stack React framework with SSR and optimized routing."
+      },
+      {
+        "name": "Web Development",
+        "proficiency": 75,
+        "description": "Full-stack development combining frontend and backend technologies."
+      },
+      {
+        "name": "JavaScript",
+        "proficiency": 67,
+        "description": "Core language for dynamic and interactive web applications."
+      },
+      {
+        "name": "TypeScript",
+        "proficiency": 66,
+        "description": "Typed JavaScript for scalable and maintainable codebases."
+      },
+      {
+        "name": "MySQL",
+        "proficiency": 71,
+        "description": "Database design, optimization, and relational data management."
+      },
+      {
+        "name": "HTML/CSS",
+        "proficiency": 72,
+        "description": "Responsive UI structuring and styling."
+      },
+      {
+        "name": "Flutter",
+        "proficiency": 58,
+        "description": "Cross-platform mobile development using Dart."
+      },
+      {
+        "name": "Machine Learning",
+        "proficiency": 60,
+        "description": "Basic model building including object detection and data-driven solutions."
+      },
+      {
+        "name": "Linux & CLI",
+        "proficiency": 93,
+        "description": "Command-line operations, system navigation, and basic environment setup."
+      },
+      {
+        "name": "CCNA",
+        "proficiency": 62,
+        "description": "Networking fundamentals and configurations."
+      },
+      {
+        "name": "Odoo",
+        "proficiency": 60,
+        "description": "ERP customization and module configuration."
+      },
+      {
+        "name": "bubble.io",
+        "proficiency": 70,
+        "description": "Rapid no-code web application development."
+      },
+      {
+        "name": "Arduino & Circuitry",
+        "proficiency": 32,
+        "description": "Basic microcontroller programming and circuit design."
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "proficiency": 72,
+        "description": "Version control and collaborative development workflows."
+      },
+      {
+        "name": "VS Code",
+        "proficiency": 78,
+        "description": "Primary code editor with extensions for efficient development."
+      },
+      {
+        "name": "Jupyter Notebook",
+        "proficiency": 66,
+        "description": "Interactive environment for Python development and data analysis."
+      },
+      {
+        "name": "PythonAnywhere",
+        "proficiency": 62,
+        "description": "Cloud-based Python app deployment and hosting."
+      },
+      {
+        "name": "XAMPP",
+        "proficiency": 65,
+        "description": "Local server environment for web development and testing."
+      },
+      {
+        "name": "Figma",
+        "proficiency": 62,
+        "description": "UI/UX design and prototyping."
+      },
+      {
+        "name": "Canva",
+        "proficiency": 60,
+        "description": "Quick design for presentations and visuals."
+      },
+      {
+        "name": "Google Workspace",
+        "proficiency": 74,
+        "description": "Productivity tools including Docs, Sheets, and Drive for collaboration."
+      },
+      {
+        "name": "MS Teams",
+        "proficiency": 70,
+        "description": "Team communication and coordination."
+      },
+      {
+        "name": "Azure DevOps",
+        "proficiency": 63,
+        "description": "Project tracking and CI/CD pipeline management."
+      },
+      {
+        "name": "Agile Framework",
+        "proficiency": 66,
+        "description": "Iterative development and team collaboration practices."
+      },
+      {
+        "name": "Adobe Photoshop",
+        "proficiency": 60,
+        "description": "Image editing and graphic design."
+      },
+      {
+        "name": "Adobe Premiere",
+        "proficiency": 60,
+        "description": "Video editing and content creation."
+      }
+    ],
+    "softSkills": [
+      {
+        "name": "Teamwork",
+        "proficiency": 88,
+        "description": "Collaborates effectively within diverse teams."
+      },
+      {
+        "name": "Communication",
+        "proficiency": 74,
+        "description": "Delivers clear and concise information across teams."
+      },
+      {
+        "name": "Problem-Solving",
+        "proficiency": 72,
+        "description": "Identifies issues and develops practical solutions."
+      },
+      {
+        "name": "Adaptability",
+        "proficiency": 70,
+        "description": "Adjusts efficiently to new tools and environments."
+      },
+      {
+        "name": "Organization",
+        "proficiency": 68,
+        "description": "Manages tasks and priorities effectively."
+      },
+      {
+        "name": "Fast Learning",
+        "proficiency": 90,
+        "description": "Quickly absorbs and applies new knowledge."
+      },
+      {
+        "name": "Work Ethic",
+        "proficiency": 92,
+        "description": "Maintains strong commitment and reliability."
+      },
+      {
+        "name": "Leadership",
+        "proficiency": 73,
+        "description": "Supports and guides teams toward goals."
+      },
+      {
+        "name": "Critical Thinking",
+        "proficiency": 72,
+        "description": "Analyzes information for sound decision-making."
+      },
+      {
+        "name": "Time Management",
+        "proficiency": 69,
+        "description": "Effectively balances multiple responsibilities."
+      },
+      {
+        "name": "Creativity",
+        "proficiency": 65,
+        "description": "Develops innovative ideas and solutions."
+      },
+      {
+        "name": "Attention to Detail",
+        "proficiency": 67,
+        "description": "Ensures accuracy and quality in outputs."
+      },
+      {
+        "name": "Initiative",
+        "proficiency": 71,
+        "description": "Proactively takes action and responsibility."
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Jairosoft Inc.",
+      "logo": "/assets/job/jairo.png",
+      "role": "Bubble.io Developer",
+      "duration": "200 hours",
+      "date": "2024-04-21",
+      "link": "https://jairosoft.com",
+      "images": [
+        "/assets/job/img (1).jpg",
+        "/assets/job/img (6).jpg",
+        "/assets/job/img (3).jpg",
+        "/assets/job/img (4).jpg",
+        "/assets/job/img (5).jpg",
+        "/assets/job/img (7).jpg",
+        "/assets/job/img (8).jpg",
+        "/assets/job/img (2).jpg",
+        "/assets/job/img (9).jpg"
+      ],
+      "description": "Built and optimized user-facing features using Bubble.io, focusing on performance, usability, and scalable workflows.",
+      "about": "Jairosoft Inc. is composed of highly skilled Agile teams, including Sitecore-certified architects, project managers, full-stack developers, and QA engineers, delivering end-to-end software solutions. The teams excel in requirements gathering, writing use cases and user stories, and managing projects using Agile/SCRUM methodologies with TFS, currently implementing SAFe. Our developers are proficient in a wide range of web technologies, including WebAPI, JSON, ASP.NET Framework/Core, C#, Azure Cloud, XML, HTML, JavaScript, CSS, AngularJS, and KnockoutJS. With strong expertise in software design and architecture—covering Object-Oriented Analysis & Design, Design Patterns, Domain-Driven Design, SOLID principles, and N-Tier design—our software solutions are rigorously tested by a dedicated QA team using Test Driven Development (TDD), unit testing, Selenium IDE, and Atlassian JIRA, ensuring high-quality, scalable, and maintainable applications."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Network Associate",
+      "type": "Certificate",
+      "logo": "/assets/certs/ccna.jpg",
+      "images": [
+        "https://picsum.photos/seed/durianpy-cover-1/1200/800",
+        "https://picsum.photos/seed/durianpy-cover-2/1200/800",
+        "https://picsum.photos/seed/durianpy-cover-3/1200/800"
+      ],
+      "issuer": "Cisco",
+      "date": "2024-03-10",
+      "details": "Entry-level certification from Cisco Systems that validates foundational skills in networking technologies, essential for roles like network administrator or engineer. It covers broad topics including network fundamentals, IP connectivity, security basics, and automation.",
+      "certificate_link": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html",
+      "website_link": "https://www.cisco.com/",
+      "extra_link": null,
+      "color": "#D97706"
+    },
+    {
+      "name": "DurianPy",
+      "type": "Organizations",
+      "logo": "https://picsum.photos/seed/durianpy-logo/600",
+      "images": [
+        "https://picsum.photos/seed/durianpy-cover-1/1200/800",
+        "https://picsum.photos/seed/durianpy-cover-2/1200/800",
+        "https://picsum.photos/seed/durianpy-cover-3/1200/800"
+      ],
+      "issuer": "Non-profit Organization",
+      "date": "2025-02-01",
+      "details": "Member of DurianPy (Python community). Participated in community discussions, shared resources, and collaborated on learning and small projects.",
+      "certificate_link": null,
+      "website_link": null,
+      "extra_link": null,
+      "color": "#22C55E"
+    },
+    {
+      "name": "UI/UX Competition",
+      "type": "Participation",
+      "logo": "https://picsum.photos/seed/uiux-competition-logo/600",
+      "images": [
+        "https://picsum.photos/seed/durianpy-cover-1/1200/800",
+        "https://picsum.photos/seed/durianpy-cover-2/1200/800",
+        "https://picsum.photos/seed/durianpy-cover-3/1200/800"
+      ],
+      "issuer": "Ateneo de Davao University",
+      "date": "2025-02-01",
+      "details": "Participated in a UI/UX design competition featuring a Minecraft-inspired theme. Worked on concept, layout, and presentation of the interface while balancing usability and aesthetics under time constraints.",
+      "certificate_link": null,
+      "website_link": null,
+      "extra_link": null,
+      "color": "#F43F5E"
+    },
+    {
+      "name": "NASA Space Apps 2025",
+      "type": "Volunteer",
+      "logo": "https://picsum.photos/seed/nasa-spaceapps-logo/600",
+      "images": [],
+      "issuer": "NASA Space Apps",
+      "date": "2025-10-01",
+      "details": "Supported event operations and technical coordination for teams (orbitals/technical track). Assisted with participant guidance, logistics, and technical help to keep the event running smoothly.",
+      "certificate_link": "https://www.spaceappschallenge.org/",
+      "website_link": "https://www.spaceappschallenge.org/",
+      "extra_link": "https://www.spaceappschallenge.org/",
+      "color": "#A78BFA"
+    },
+    {
+      "name": "FreeCodeCamp B1 English",
+      "type": "Certificate",
+      "logo": "https://picsum.photos/seed/fcc-english-b1/600",
+      "images": [],
+      "issuer": "FreeCodeCamp",
+      "date": "2025-01-15",
+      "details": "Achieved B1 level proficiency in English through FreeCodeCamp language learning resources.",
+      "certificate_link": "https://www.freecodecamp.org/certification/b1-english",
+      "website_link": "https://www.freecodecamp.org/",
+      "extra_link": null,
+      "color": "#0A5FBD"
+    },
+    {
+      "name": "FreeCodeCamp A2 English",
+      "type": "Certificate",
+      "logo": "https://picsum.photos/seed/fcc-english-a2/600",
+      "images": [],
+      "issuer": "FreeCodeCamp",
+      "date": "2024-10-10",
+      "details": "Achieved A2 level proficiency in English through FreeCodeCamp language learning resources.",
+      "certificate_link": "https://www.freecodecamp.org/certification/a2-english",
+      "website_link": "https://www.freecodecamp.org/",
+      "extra_link": null,
+      "color": "#0A5FBD"
+    },
+    {
+      "name": "FreeCodeCamp Python Certification",
+      "type": "Certificate",
+      "logo": "https://picsum.photos/seed/fcc-python/600",
+      "images": [],
+      "issuer": "FreeCodeCamp",
+      "date": "2025-03-05",
+      "details": "Completed FreeCodeCamp Python course covering scripting, automation, and basic data manipulation.",
+      "certificate_link": "https://www.freecodecamp.org/certification/python",
+      "website_link": "https://www.freecodecamp.org/",
+      "extra_link": null,
+      "color": "#306998"
+    },
+    {
+      "name": "FreeCodeCamp Responsive Web Design",
+      "type": "Certificate",
+      "logo": "https://picsum.photos/seed/fcc-responsive/600",
+      "images": [],
+      "issuer": "FreeCodeCamp",
+      "date": "2025-04-12",
+      "details": "Completed responsive web design curriculum covering HTML, CSS, and accessibility best practices.",
+      "certificate_link": "https://www.freecodecamp.org/certification/responsive-web-design",
+      "website_link": "https://www.freecodecamp.org/",
+      "extra_link": null,
+      "color": "#E34F26"
+    },
+    {
+      "name": "FreeCodeCamp Frontend Development Libraries",
+      "type": "Certificate",
+      "logo": "https://picsum.photos/seed/fcc-frontend/600",
+      "images": [],
+      "issuer": "FreeCodeCamp",
+      "date": "2025-05-20",
+      "details": "Completed FreeCodeCamp curriculum on frontend development libraries including React, Redux, and Bootstrap.",
+      "certificate_link": "https://www.freecodecamp.org/certification/frontend-libraries",
+      "website_link": "https://www.freecodecamp.org/",
+      "extra_link": null,
+      "color": "#61DAFB"
+    },
+    {
+      "name": "FreeCodeCamp Relational Databases",
+      "type": "Certificate",
+      "logo": "https://picsum.photos/seed/fcc-sql/600",
+      "images": [],
+      "issuer": "FreeCodeCamp",
+      "date": "2025-06-15",
+      "details": "Completed FreeCodeCamp course on relational databases, SQL queries, and database management principles.",
+      "certificate_link": "https://www.freecodecamp.org/certification/relational-databases",
+      "website_link": "https://www.freecodecamp.org/",
+      "extra_link": null,
+      "color": "#4479A1"
+    }
+  ]
+}

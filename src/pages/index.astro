@@ -1,0 +1,136 @@
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import SkillsBoard from "../components/SkillsBoard.astro";
+import ExperienceSection from "../components/ExperienceSection.astro";
+import CertificationList from "../components/CertificationList.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { favoriteProjects, portfolio, topTechnicalSkills } from "../data/portfolio";
+
+const projects = portfolio.projects;
+const technicalSkills = portfolio.skills.technical;
+const tools = portfolio.skills.tools;
+const softSkills = portfolio.skills.softSkills;
+const projectPageCount = Math.ceil(projects.length / 4);
+---
+
+<BaseLayout
+  title="Tychefolio | Joem Idpan"
+  description="A wild western newspaper style developer portfolio featuring projects, skills, experience, and certifications."
+>
+  <div class="page-shell">
+    <Header />
+    <main>
+      <Hero favoriteProjects={favoriteProjects} topSkills={topTechnicalSkills} />
+
+      <section class="paper-ribbon intro-strip" aria-label="Portfolio summary">
+        <div>
+          <span class="stat-number">{projects.length}</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div>
+          <span class="stat-number">{technicalSkills.length}</span>
+          <span class="stat-label">Technical Skills</span>
+        </div>
+        <div>
+          <span class="stat-number">{portfolio.certifications.length}</span>
+          <span class="stat-label">Credentials</span>
+        </div>
+        <div>
+          <span class="stat-number">{portfolio.experience.length}</span>
+          <span class="stat-label">Work Entry</span>
+        </div>
+      </section>
+
+      <section class="newspaper-section projects-section" id="projects">
+        <div class="section-heading">
+          <p class="kicker">Front Page Work</p>
+          <h2>Projects</h2>
+          <p>
+            A selected board of web systems, mobile apps, desktop tools, automation work, games,
+            machine learning projects, and portfolio builds.
+          </p>
+        </div>
+        <div class="project-controls" aria-label="Project pages">
+          <button type="button" data-project-prev>Previous</button>
+          <span data-project-status>Page 1 of {projectPageCount}</span>
+          <button type="button" data-project-next>Next</button>
+        </div>
+        <div class="project-grid" data-project-grid>
+          {projects.map((project, index) => <ProjectCard project={project} index={index} />)}
+        </div>
+      </section>
+
+      <section class="newspaper-section skills-section" id="skills">
+        <div class="section-heading">
+          <p class="kicker">Skill Ledger</p>
+          <h2>Tools of the Trade</h2>
+          <p>Grouped by how the work usually happens: build, ship, communicate, and keep learning.</p>
+        </div>
+        <SkillsBoard title="Technical" skills={technicalSkills} />
+        <SkillsBoard title="Tools" skills={tools} compact />
+        <SkillsBoard title="Soft Skills" skills={softSkills} compact />
+      </section>
+
+      <ExperienceSection experience={portfolio.experience} />
+
+      <CertificationList certifications={portfolio.certifications} />
+
+      <section class="newspaper-section contact-section" id="contact">
+        <div>
+          <p class="kicker">Telegram Office</p>
+          <h2>Contact</h2>
+          <p>
+            Interested in internship work, collaboration, or reviewing the projects in this portfolio?
+            The main project repositories are linked throughout the site.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://github.com/joemtyche" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button" href="https://github.com/tychesama" target="_blank" rel="noreferrer">Alt GitHub</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const cards = Array.from(document.querySelectorAll("[data-project-card]"));
+    const prev = document.querySelector("[data-project-prev]");
+    const next = document.querySelector("[data-project-next]");
+    const status = document.querySelector("[data-project-status]");
+    const pageCount = Math.max(...cards.map((card) => Number(card.getAttribute("data-page"))));
+    let currentPage = 1;
+
+    function renderProjectPage() {
+      cards.forEach((card) => {
+        const page = Number(card.getAttribute("data-page"));
+        card.toggleAttribute("hidden", page !== currentPage);
+      });
+
+      if (status) {
+        status.textContent = `Page ${currentPage} of ${pageCount}`;
+      }
+
+      if (prev instanceof HTMLButtonElement) {
+        prev.disabled = currentPage === 1;
+      }
+
+      if (next instanceof HTMLButtonElement) {
+        next.disabled = currentPage === pageCount;
+      }
+    }
+
+    prev?.addEventListener("click", () => {
+      currentPage = Math.max(1, currentPage - 1);
+      renderProjectPage();
+    });
+
+    next?.addEventListener("click", () => {
+      currentPage = Math.min(pageCount, currentPage + 1);
+      renderProjectPage();
+    });
+
+    renderProjectPage();
+  </script>
+</BaseLayout>

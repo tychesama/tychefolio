@@ -1,0 +1,66 @@
+---
+import type { Project, Skill } from "../data/portfolio";
+
+type Props = {
+  favoriteProjects: Project[];
+  topSkills: Skill[];
+};
+
+const { favoriteProjects, topSkills } = Astro.props;
+
+---
+
+<section class="hero newspaper-section" id="top">
+  <div class="issue-line">
+    <span>Jose Emmanuel R. Idpan</span>
+    <span>Developer Portfolio</span>
+    <span>EST. 2026</span>
+  </div>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">Wanted for practical software work</p>
+      <h1>Joem Idpan</h1>
+      <p class="deck">
+        Developer focused on web systems, mobile apps, automation, machine learning, and practical tools
+        built from real project experience.
+      </p>
+      <div class="hero-actions" aria-label="Primary actions">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button" href="#skills">Read Skills</a>
+      </div>
+
+      <div class="hero-briefs" aria-label="Portfolio highlights">
+        <article>
+          <span>Front Page</span>
+          <strong>{favoriteProjects[0]?.name}</strong>
+          <p>{favoriteProjects[0]?.description}</p>
+        </article>
+        <article>
+          <span>Current Stack</span>
+          <strong>{topSkills.slice(0, 3).map((skill) => skill.name).join(" / ")}</strong>
+          <p>Backend, frontend, tooling, and practical project delivery.</p>
+        </article>
+      </div>
+    </div>
+
+    <aside class="wanted-card" aria-label="Portfolio identity card">
+      <img src="/assets/placeholders/portrait.svg" alt="Temporary western portrait placeholder" />
+      <p class="wanted-title">Developer Notice</p>
+      <dl>
+        <div>
+          <dt>Featured</dt>
+          <dd>{favoriteProjects.length}</dd>
+        </div>
+        <div>
+          <dt>Top Skills</dt>
+          <dd>{topSkills.length}</dd>
+        </div>
+        <div>
+          <dt>Focus</dt>
+          <dd>Web / Automation</dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>

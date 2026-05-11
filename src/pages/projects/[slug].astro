@@ -1,0 +1,93 @@
+---
+import Header from "../../components/Header.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getTagValue,
+  portfolio,
+  projectPlaceholder,
+  projectSlug,
+  type Project,
+} from "../../data/portfolio";
+
+export function getStaticPaths() {
+  return portfolio.projects.map((project, index) => ({
+    params: { slug: projectSlug(project) },
+    props: { project, index },
+  }));
+}
+
+type Props = {
+  project: Project;
+  index: number;
+};
+
+const { project, index } = Astro.props;
+const image = projectPlaceholder(index);
+const projectType = getTagValue(project, "type");
+const platform = getTagValue(project, "platform");
+const status = getTagValue(project, "status");
+const domains = project.tags
+  .filter((tag) => tag.startsWith("domain:"))
+  .map((tag) => tag.replace("domain:", ""));
+---
+
+<BaseLayout title={`${project.name} | Tychefolio`} description={project.description}>
+  <div class="page-shell">
+    <Header />
+    <main>
+      <article class="detail-page project-detail" style={`--accent: ${project.color}`}>
+        <a class="back-link" href="/#projects">Back to Projects</a>
+        <div class="detail-hero">
+          <div>
+            <p class="kicker">Project Record</p>
+            <h1>{project.name}</h1>
+            <p class="deck">{project.description}</p>
+            <div class="detail-actions">
+              <a class="button primary" href={project.link} target="_blank" rel="noreferrer">GitHub</a>
+              {project.deployment && <a class="button" href={project.deployment} target="_blank" rel="noreferrer">Live</a>}
+              {project.documentation && <a class="button" href={project.documentation} target="_blank" rel="noreferrer">Docs</a>}
+            </div>
+          </div>
+          <img src={image} alt={`Temporary project visual for ${project.name}`} />
+        </div>
+
+        <section class="detail-grid" aria-label="Project details">
+          <article>
+            <h2>Summary</h2>
+            <p>{project.description}</p>
+            <p>
+              This project is listed as a {status || "portfolio"} {projectType || "project"}
+              {platform ? ` for ${platform}` : ""}.
+            </p>
+          </article>
+          <article>
+            <h2>Stack</h2>
+            <ul class="detail-tags">
+              {project.techstack.map((tech) => <li>{tech}</li>)}
+            </ul>
+          </article>
+          <article>
+            <h2>Domains</h2>
+            <ul class="detail-tags">
+              {domains.length > 0 ? domains.map((domain) => <li>{domain}</li>) : <li>Portfolio</li>}
+            </ul>
+          </article>
+          <article>
+            <h2>Collaborators</h2>
+            {
+              Object.entries(project.collaborators).length > 0 ? (
+                <ul class="detail-list">
+                  {Object.entries(project.collaborators).map(([name, link]) => (
+                    <li><a href={link} target="_blank" rel="noreferrer">{name}</a></li>
+                  ))}
+                </ul>
+              ) : (
+                <p>Solo project.</p>
+              )
+            }
+          </article>
+        </section>
+      </article>
+    </main>
+  </div>
+</BaseLayout>

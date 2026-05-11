@@ -1,0 +1,61 @@
+---
+import Header from "../../components/Header.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  certificationSlug,
+  formatDate,
+  portfolio,
+  type Certification,
+} from "../../data/portfolio";
+
+export function getStaticPaths() {
+  return portfolio.certifications.map((certification) => ({
+    params: { slug: certificationSlug(certification) },
+    props: { certification },
+  }));
+}
+
+type Props = {
+  certification: Certification;
+};
+
+const { certification } = Astro.props;
+---
+
+<BaseLayout title={`${certification.name} | Tychefolio`} description={certification.details}>
+  <div class="page-shell">
+    <Header />
+    <main>
+      <article class="detail-page certification-detail" style={`--accent: ${certification.color}`}>
+        <a class="back-link" href="/#certifications">Back to Certifications</a>
+        <div class="detail-hero">
+          <div>
+            <p class="kicker">Public Notice</p>
+            <h1>{certification.name}</h1>
+            <p class="deck">{certification.details}</p>
+            <div class="detail-actions">
+              {certification.certificate_link && <a class="button primary" href={certification.certificate_link} target="_blank" rel="noreferrer">Certificate</a>}
+              {certification.website_link && <a class="button" href={certification.website_link} target="_blank" rel="noreferrer">Website</a>}
+              {certification.extra_link && <a class="button" href={certification.extra_link} target="_blank" rel="noreferrer">Extra</a>}
+            </div>
+          </div>
+          <div class="detail-stamp">
+            <span>{certification.type}</span>
+            <strong>{formatDate(certification.date)}</strong>
+          </div>
+        </div>
+
+        <section class="detail-grid" aria-label="Certification details">
+          <article>
+            <h2>Issuer</h2>
+            <p>{certification.issuer}</p>
+          </article>
+          <article>
+            <h2>Details</h2>
+            <p>{certification.details}</p>
+          </article>
+        </section>
+      </article>
+    </main>
+  </div>
+</BaseLayout>

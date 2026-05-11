@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Project placeholder three</title>
+  <desc id="desc">A desert badge placeholder for a project image.</desc>
+  <rect width="1200" height="750" fill="#d8cfbf"/>
+  <path d="M0 545c135-80 260-110 410-65 180 54 300 48 465-20 130-54 220-45 325 35v255H0z" fill="#9d7d62"/>
+  <circle cx="930" cy="170" r="80" fill="#b18635"/>
+  <path d="M930 50v240M810 170h240M845 85l170 170M1015 85L845 255" stroke="#a24724" stroke-width="8"/>
+  <text x="90" y="215" fill="#1b1915" font-family="Georgia, serif" font-size="94" font-weight="700">COMING</text>
+  <text x="90" y="325" fill="#1b1915" font-family="Georgia, serif" font-size="94" font-weight="700">SOON</text>
+</svg>

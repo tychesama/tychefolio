@@ -1,0 +1,46 @@
+---
+import { getTagValue, projectPlaceholder, projectSlug, type Project } from "../data/portfolio";
+
+type Props = {
+  project: Project;
+  index: number;
+};
+
+const { project, index } = Astro.props;
+const projectType = getTagValue(project, "type");
+const platform = getTagValue(project, "platform");
+const image = projectPlaceholder(index);
+const page = Math.floor(index / 4) + 1;
+const visibleTech = project.techstack.slice(0, 4);
+const detailsUrl = `/projects/${projectSlug(project)}/`;
+---
+
+<article
+  class="project-card"
+  data-project-card
+  data-page={page}
+  style={`--accent: ${project.color}`}
+>
+  <a class="project-image" href={detailsUrl}>
+    <img src={image} alt={`Temporary placeholder image for ${project.name}`} loading="lazy" />
+  </a>
+
+  <div class="project-body">
+    <div class="project-meta">
+      {project.favorite && <span class="badge">Front Page</span>}
+      {projectType && <span>{projectType}</span>}
+      {platform && <span>{platform}</span>}
+    </div>
+    <h3>{project.name}</h3>
+    <p>{project.description}</p>
+    <ul class="tech-list" aria-label={`${project.name} tech stack`}>
+      {visibleTech.map((tech) => <li>{tech}</li>)}
+    </ul>
+    <div class="project-links">
+      <a href={detailsUrl}>Details</a>
+      <a href={project.link} target="_blank" rel="noreferrer">GitHub</a>
+      {project.deployment && <a href={project.deployment} target="_blank" rel="noreferrer">Live</a>}
+      {project.documentation && <a href={project.documentation} target="_blank" rel="noreferrer">Docs</a>}
+    </div>
+  </div>
+</article>
