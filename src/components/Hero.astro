@@ -1,4 +1,5 @@
 ---
+import { projectSlug } from "../data/portfolio";
 import type { Project, Skill } from "../data/portfolio";
 
 type Props = {
@@ -7,6 +8,7 @@ type Props = {
 };
 
 const { favoriteProjects, topSkills } = Astro.props;
+const frontPageProject = favoriteProjects[0];
 
 ---
 
@@ -31,11 +33,11 @@ const { favoriteProjects, topSkills } = Astro.props;
       </div>
 
       <div class="hero-briefs" aria-label="Portfolio highlights">
-        <article>
+        <a class="hero-brief" href={frontPageProject ? `/projects/${projectSlug(frontPageProject)}/` : "#projects"}>
           <span>Front Page</span>
-          <strong>{favoriteProjects[0]?.name}</strong>
-          <p>{favoriteProjects[0]?.description}</p>
-        </article>
+          <strong>{frontPageProject?.name}</strong>
+          <p>{frontPageProject?.description}</p>
+        </a>
         <article>
           <span>Current Stack</span>
           <strong>{topSkills.slice(0, 3).map((skill) => skill.name).join(" / ")}</strong>
