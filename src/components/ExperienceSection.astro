@@ -17,17 +17,22 @@ const { experience } = Astro.props;
     {experience.map((item) => (
       <article class="experience-card">
         <a class="stretched-link" href={`/experience/${experienceSlug(item)}/`} aria-label={`Read ${item.role} field report`}></a>
-        <div class="experience-stamp">
-          <span>{formatDate(item.date)}</span>
-          <strong>{item.duration}</strong>
+        <div class="experience-logo">
+          <img src={item.logo} alt={`${item.company} logo`} loading="lazy" />
         </div>
-        <div>
+        <div class="experience-content">
+          <div class="experience-card-meta">
+            <a href={item.link} target="_blank" rel="noreferrer">{item.company}</a>
+          </div>
           <h3>{item.role}</h3>
-          <a href={item.link} target="_blank" rel="noreferrer">{item.company}</a>
           <p>{item.description}</p>
           <div class="project-links">
             <a href={`/experience/${experienceSlug(item)}/`}>Read Field Report</a>
           </div>
+        </div>
+        <div class="experience-stamp">
+          <span>{formatDate(item.date)}</span>
+          <strong>{item.duration}</strong>
         </div>
       </article>
     ))}

@@ -20,6 +20,8 @@ type Props = {
 };
 
 const { certification } = Astro.props;
+const heroImage = certification.images[0] || certification.logo;
+const galleryImages = certification.images.filter((image) => image !== heroImage);
 ---
 
 <BaseLayout title={`${certification.name} | Tychefolio`} description={certification.details}>
@@ -39,9 +41,12 @@ const { certification } = Astro.props;
               {certification.extra_link && <a class="button" href={certification.extra_link} target="_blank" rel="noreferrer">Extra</a>}
             </div>
           </div>
-          <div class="detail-stamp">
-            <span>{certification.type}</span>
-            <strong>{formatDate(certification.date)}</strong>
+          <div class="certification-detail-media">
+            {heroImage && <img src={heroImage} alt={`${certification.name} visual`} />}
+            <div class="detail-stamp">
+              <span>{certification.type}</span>
+              <strong>{formatDate(certification.date)}</strong>
+            </div>
           </div>
         </div>
 
@@ -55,6 +60,17 @@ const { certification } = Astro.props;
             <p>{certification.details}</p>
           </article>
         </section>
+
+        {galleryImages.length > 0 && (
+          <section class="certification-gallery" aria-label={`${certification.name} image gallery`}>
+            <h2>Certificate Images</h2>
+            <div>
+              {galleryImages.map((image, index) => (
+                <img src={image} alt={`${certification.name} image ${index + 2}`} loading="lazy" />
+              ))}
+            </div>
+          </section>
+        )}
       </article>
     </main>
   </div>

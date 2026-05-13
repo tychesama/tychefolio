@@ -22,14 +22,14 @@
       "repo": "MotobaiProject",
       "color": "#3B82F6",
       "images": [
-        "/assets/projects/motobai/moto.gif",
-        "/assets/projects/motobai/1.png",
-        "/assets/projects/motobai/2.png",
-        "/assets/projects/motobai/3.png",
-        "/assets/projects/motobai/4.png",
-        "/assets/projects/motobai/5.png",
-        "/assets/projects/motobai/6.png",
-        "/assets/projects/motobai/7.png"
+        "/assets/assets/projects/motobai/moto.gif",
+        "/assets/assets/projects/motobai/1.png",
+        "/assets/assets/projects/motobai/2.png",
+        "/assets/assets/projects/motobai/3.png",
+        "/assets/assets/projects/motobai/4.png",
+        "/assets/assets/projects/motobai/5.png",
+        "/assets/assets/projects/motobai/6.png",
+        "/assets/assets/projects/motobai/7.png"
       ],
       "user": "joemtyche",
       "techstack": [
@@ -65,12 +65,12 @@
       "repo": "highlights-app",
       "color": "#10B981",
       "images": [
-        "/assets/projects/highlights_app/high.gif",
-        "/assets/projects/highlights_app/1.png",
-        "/assets/projects/highlights_app/2.png",
-        "/assets/projects/highlights_app/3.png",
-        "/assets/projects/highlights_app/4.png",
-        "/assets/projects/highlights_app/5.png"
+        "/assets/assets/projects/highlights_app/high.gif",
+        "/assets/assets/projects/highlights_app/1.png",
+        "/assets/assets/projects/highlights_app/2.png",
+        "/assets/assets/projects/highlights_app/3.png",
+        "/assets/assets/projects/highlights_app/4.png",
+        "/assets/assets/projects/highlights_app/5.png"
       ],
       "user": "tychesama",
       "techstack": [
@@ -99,13 +99,13 @@
       "repo": "AdventureGame",
       "color": "#F59E0B",
       "images": [
-        "/assets/projects/infinite_tower/inf.gif",
-        "/assets/projects/infinite_tower/1.png",
-        "/assets/projects/infinite_tower/2.png",
-        "/assets/projects/infinite_tower/3.png",
-        "/assets/projects/infinite_tower/4.png",
-        "/assets/projects/infinite_tower/5.png",
-        "/assets/projects/infinite_tower/6.png"
+        "/assets/assets/projects/infinite_tower/inf.gif",
+        "/assets/assets/projects/infinite_tower/1.png",
+        "/assets/assets/projects/infinite_tower/2.png",
+        "/assets/assets/projects/infinite_tower/3.png",
+        "/assets/assets/projects/infinite_tower/4.png",
+        "/assets/assets/projects/infinite_tower/5.png",
+        "/assets/assets/projects/infinite_tower/6.png"
       ],
       "user": "joemtyche",
       "techstack": [
@@ -136,11 +136,11 @@
       "repo": "EventDrivenCRUD",
       "color": "#EF4444",
       "images": [
-        "/assets/projects/employee_management/emp.gif",
-        "/assets/projects/employee_management/1.png",
-        "/assets/projects/employee_management/2.png",
-        "/assets/projects/employee_management/3.png",
-        "/assets/projects/employee_management/4.png"
+        "/assets/assets/projects/employee_management/emp.gif",
+        "/assets/assets/projects/employee_management/1.png",
+        "/assets/assets/projects/employee_management/2.png",
+        "/assets/assets/projects/employee_management/3.png",
+        "/assets/assets/projects/employee_management/4.png"
       ],
       "user": "joemtyche",
       "techstack": [
@@ -234,11 +234,11 @@
       "repo": "CPIS_AdDU",
       "color": "#8B5CF6",
       "images": [
-        "/assets/projects/store_it/store.gif",
-        "/assets/projects/store_it/1.png",
-        "/assets/projects/store_it/2.png",
-        "/assets/projects/store_it/3.png",
-        "/assets/projects/store_it/4.png"
+        "/assets/assets/projects/store_it/store.gif",
+        "/assets/assets/projects/store_it/1.png",
+        "/assets/assets/projects/store_it/2.png",
+        "/assets/assets/projects/store_it/3.png",
+        "/assets/assets/projects/store_it/4.png"
       ],
       "user": "joemtyche",
       "techstack": [
@@ -273,10 +273,10 @@
       "repo": "PerformanceAssessment1",
       "color": "#DC2626",
       "images": [
-        "/assets/projects/japan_attractions/japan.gif",
-        "/assets/projects/japan_attractions/1.png",
-        "/assets/projects/japan_attractions/2.png",
-        "/assets/projects/japan_attractions/3.png"
+        "/assets/assets/projects/japan_attractions/japan.gif",
+        "/assets/assets/projects/japan_attractions/1.png",
+        "/assets/assets/projects/japan_attractions/2.png",
+        "/assets/assets/projects/japan_attractions/3.png"
       ],
       "user": "tychesama",
       "techstack": [
@@ -649,21 +649,21 @@
   "experience": [
     {
       "company": "Jairosoft Inc.",
-      "logo": "/assets/job/jairo.png",
+      "logo": "/assets/assets/job/jairo.png",
       "role": "Bubble.io Developer",
       "duration": "200 hours",
       "date": "2024-04-21",
       "link": "https://jairosoft.com",
       "images": [
-        "/assets/job/img (1).jpg",
-        "/assets/job/img (6).jpg",
-        "/assets/job/img (3).jpg",
-        "/assets/job/img (4).jpg",
-        "/assets/job/img (5).jpg",
-        "/assets/job/img (7).jpg",
-        "/assets/job/img (8).jpg",
-        "/assets/job/img (2).jpg",
-        "/assets/job/img (9).jpg"
+        "/assets/assets/job/img (1).jpg",
+        "/assets/assets/job/img (6).jpg",
+        "/assets/assets/job/img (3).jpg",
+        "/assets/assets/job/img (4).jpg",
+        "/assets/assets/job/img (5).jpg",
+        "/assets/assets/job/img (7).jpg",
+        "/assets/assets/job/img (8).jpg",
+        "/assets/assets/job/img (2).jpg",
+        "/assets/assets/job/img (9).jpg"
       ],
       "description": "Built and optimized user-facing features using Bubble.io, focusing on performance, usability, and scalable workflows.",
       "about": "Jairosoft Inc. is composed of highly skilled Agile teams, including Sitecore-certified architects, project managers, full-stack developers, and QA engineers, delivering end-to-end software solutions. The teams excel in requirements gathering, writing use cases and user stories, and managing projects using Agile/SCRUM methodologies with TFS, currently implementing SAFe. Our developers are proficient in a wide range of web technologies, including WebAPI, JSON, ASP.NET Framework/Core, C#, Azure Cloud, XML, HTML, JavaScript, CSS, AngularJS, and KnockoutJS. With strong expertise in software design and architecture—covering Object-Oriented Analysis & Design, Design Patterns, Domain-Driven Design, SOLID principles, and N-Tier design—our software solutions are rigorously tested by a dedicated QA team using Test Driven Development (TDD), unit testing, Selenium IDE, and Atlassian JIRA, ensuring high-quality, scalable, and maintainable applications."
@@ -673,11 +673,9 @@
     {
       "name": "Certified Network Associate",
       "type": "Certificate",
-      "logo": "/assets/certs/ccna.jpg",
+      "logo": "/assets/assets/certs/ccna.jpg",
       "images": [
-        "https://picsum.photos/seed/durianpy-cover-1/1200/800",
-        "https://picsum.photos/seed/durianpy-cover-2/1200/800",
-        "https://picsum.photos/seed/durianpy-cover-3/1200/800"
+        "/assets/assets/certs/ccna.jpg"
       ],
       "issuer": "Cisco",
       "date": "2024-03-10",

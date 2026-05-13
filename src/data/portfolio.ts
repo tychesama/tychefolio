@@ -93,15 +93,8 @@ export function certificationSlug(certification: Certification) {
   return slugify(`${certification.issuer}-${certification.name}`);
 }
 
-export function projectPlaceholder(index: number) {
-  const placeholders = [
-    "/assets/placeholders/project-1.svg",
-    "/assets/placeholders/project-2.svg",
-    "/assets/placeholders/project-3.svg",
-    "/assets/placeholders/project-4.svg",
-  ];
-
-  return placeholders[index % placeholders.length];
+export function projectImage(project: Project) {
+  return project.images[0];
 }
 
 export function formatDate(date: string) {

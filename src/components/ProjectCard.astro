@@ -1,5 +1,5 @@
 ---
-import { getTagValue, projectPlaceholder, projectSlug, type Project } from "../data/portfolio";
+import { getTagValue, projectImage, projectSlug, type Project } from "../data/portfolio";
 
 type Props = {
   project: Project;
@@ -9,7 +9,7 @@ type Props = {
 const { project, index } = Astro.props;
 const projectType = getTagValue(project, "type");
 const platform = getTagValue(project, "platform");
-const image = projectPlaceholder(index);
+const image = projectImage(project);
 const page = Math.floor(index / 4) + 1;
 const visibleTech = project.techstack.slice(0, 4);
 const detailsUrl = `/projects/${projectSlug(project)}/`;
@@ -22,8 +22,8 @@ const detailsUrl = `/projects/${projectSlug(project)}/`;
   style={`--accent: ${project.color}`}
 >
   <a class="stretched-link" href={detailsUrl} aria-label={`View ${project.name} details`}></a>
-  <a class="project-image" href={detailsUrl}>
-    <img src={image} alt={`Temporary placeholder image for ${project.name}`} loading="lazy" />
+  <a class:list={["project-image", !image && "project-image-empty"]} href={detailsUrl}>
+    {image ? <img src={image} alt={`${project.name} preview`} loading="lazy" /> : <span>Image coming soon</span>}
   </a>
 
   <div class="project-body">

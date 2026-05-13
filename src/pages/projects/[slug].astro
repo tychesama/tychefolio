@@ -4,25 +4,25 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   getTagValue,
   portfolio,
-  projectPlaceholder,
+  projectImage,
   projectSlug,
   type Project,
 } from "../../data/portfolio";
 
 export function getStaticPaths() {
-  return portfolio.projects.map((project, index) => ({
+  return portfolio.projects.map((project) => ({
     params: { slug: projectSlug(project) },
-    props: { project, index },
+    props: { project },
   }));
 }
 
 type Props = {
   project: Project;
-  index: number;
 };
 
-const { project, index } = Astro.props;
-const image = projectPlaceholder(index);
+const { project } = Astro.props;
+const image = projectImage(project);
+const galleryImages = project.images;
 const projectType = getTagValue(project, "type");
 const platform = getTagValue(project, "platform");
 const status = getTagValue(project, "status");
@@ -49,7 +49,13 @@ const collaborators = Object.entries(project.collaborators);
               {project.documentation && <a class="button" href={project.documentation} target="_blank" rel="noreferrer">Docs</a>}
             </div>
           </div>
-          <img src={image} alt={`Temporary project visual for ${project.name}`} />
+          {
+            image ? (
+              <img src={image} alt={`${project.name} visual preview`} />
+            ) : (
+              <div class="detail-media-empty">Project image not added yet</div>
+            )
+          }
         </div>
 
         <section class="information-panel" aria-label="Project information">
@@ -107,6 +113,17 @@ const collaborators = Object.entries(project.collaborators);
             ))}
           </div>
         </section>
+
+        {galleryImages.length > 0 && (
+          <section class="project-gallery" aria-label={`${project.name} image gallery`}>
+            <h2>Project Images</h2>
+            <div>
+              {galleryImages.map((galleryImage, index) => (
+                <img src={galleryImage} alt={`${project.name} image ${index + 1}`} loading="lazy" />
+              ))}
+            </div>
+          </section>
+        )}
       </article>
     </main>
   </div>
